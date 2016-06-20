@@ -1,24 +1,9 @@
-# passport-stepic
-
-[Passport](http://passportjs.org/) strategy for authenticating with [Stepic](https://stepic.org/)
-using the OAuth 2.0 API.
-
-## Install
-
-    $ npm install passport-stepic
-    
-## Requirements
-  - [Create an application](https://stepic.org/oauth2/applications/) with `Authorization Grant Type` `authorization code`
-  - Specify `Redirect Uris` 
-    
-## Example
-```javascript
 'use strict';
 
 const PORT = 3000;
 
 const passport = require('passport');
-const StepicStrategy = require('passport-stepic');
+const StepicStrategy = require('../index');
 const app = require('express')();
 const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
 
@@ -54,4 +39,3 @@ app.get('/logout', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Listening ${PORT}...`));
-```

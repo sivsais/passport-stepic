@@ -1,0 +1,35 @@
+{
+  "name": "passport-stepic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivsais/passport-stepic.git"
+  },
+  "keywords": [
+    "stepic",
+    "passport",
+    "oauth2"
+  ],
+  "author": "sivsais",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sivsais/passport-stepic/issues"
+  },
+  "homepage": "https://github.com/sivsais/passport-stepic#readme",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "passport-oauth2": "^1.3.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "connect-ensure-login": "^0.1.1",
+    "express": "^4.14.0",
+    "express-session": "^1.13.0",
+    "passport": "^0.3.2"
+  }
+}
